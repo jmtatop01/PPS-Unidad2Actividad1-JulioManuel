@@ -1,47 +1,25 @@
 # PPS-Unidad2Actividad1-JulioManuel
 
 # Trazado de una vulnerabilidad.
-Actividad 1 de la Unidad 1 de Puesta en Producción Segura. Tabajaremos con los Entornos de Desarrollo
+Tabajaremos con los Entornos de Desarrollo
 
 Tenemos varios objetivos:
-
-> [Conocer las diferentes listas que tienen que ver con amenazas de seguridad.](#Listas)
 
 > [Obtener información de una vulnerabilidad navegando por las webs de los organismos que mantienen esas listas.](#Trazado)
 
 ---
-## Listas
-
-En [este enlace](https://moodle.educarex.es/ccff_iesvjp/pluginfile.php/27882/mod_resource/content/17/PresentacionUnidad2NivelesSeguridadAplicaciones2025.pdf) puedes ver la presentación donde se pueden encontrar información sobre las organizaciónes y agencias que mantienen información sobre amenazas, vulnerabilidades, debilidades etc.
-
-Vemos que es grande la información en fuentes abiertas que podemos consultar. Aquí nos centraremos en obtener información principalmente de las siguientes listas:
-- [Lista de vulnerabilidades comunes: CVE.](https://www.cve.org/)
-
-- [Base de datos de vulnerabilidades: NVD.](https://www.nist.gov/)
-
-- [Lista de debilidades comunes: CWE.](https://cwe.mitre.org/)
-
-- [Lista de plataformas comunes: CPE.](https://cpe.mitre.org/)
-
-- [Lista de patrones de ataque: CAPEC.](https://capec.mitre.org/)
-
-
-También vamos a ver información de información adicional:
-
-- [Ver el grado de criticidad de una vulnerabilidad y a partir de qué datos se calcula: CVSS.](https://www.first.org/cvss/)
-
-[- [Ver el marco MITRE ATT&CK ](https://attack.mitre.org/)]:#
-
 ## Trazado
-Vamos a seguir el trazado de una vulnerabilidad a partir del [este artículo del INCIBE](https://www.incibe.es/empresas/avisos/autodesk-ha-publicado-multiples-vulnerabilidades-que-afectan-autocad).
+Vamos a seguir el trazado de una vulnerabilidad a partir del [artículo del INCIBE](https://www.incibe.es/empresas/avisos/vulnerabilidad-critica-de-omision-de-autenticacion-en-goanywhere-mft-de-fortra).
 
-Como vemos nos informan de varias vulnerabilidades presentes en la aplicación AutoCad, desarrollado por Autodesk.
+Como vemos nos informa de una vulnerabilidad presente en la aplicación GoAnywhere MFT de Fortra.
 
-Como en este artículo no nos dán información sobre el número de la vulnerabilidad, nos vamos al apartado de referencias, donde encontramos enlaces a las noticias publicadas por el desarrollador:
+Como en este artículo no nos dán información sobre el número de la vulnerabilidad, nos vamos al apartado de referencias, donde encontramos un enlace a la noticia publicada por el desarrollador:
 
-Dándole al enlace nos lleva a la página: [https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0018](https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0018)
+Dándole al enlace nos lleva a la página: [https://www.fortra.com/security/advisories/product-security/fi-2024-001](https://www.fortra.com/security/advisories/product-security/fi-2024-001)
 
-![](images/Screenshot_20250217_181538.png)
+<div align="center">
+  <img src="1.png" width="500">
+</div>
 
 ## Información sobre Vulnerabilidades
 Allí vemos una descripción de los problemas y cómo, son varias las vulnerabilidades detectadas:
@@ -62,7 +40,9 @@ Para ver información sobre dicha vulnerabilidad podemos acudir al menos a dos f
 
 Desde la [entrada correspondiente a la vulnerabilidad en la NVD](https://nvd.nist.gov/vuln/detail/CVE-2023-29073), lo primero que nos encontramos, es la información de la criticidad que la vulnerabilidad presenta, así como el vector asociado a dicho nivel en la CVSS. En este caso vemos que tiene una valoración de 9.8, y está marcada como __crítica__.
  
-![](images/Screenshot_20250217_183915.png) 
+<div align="center">
+  <img src="4.png" width="500">
+</div>
 
 Si ponemos el cursor sobre el Vector nos aparecerán los valores correspondientes a las diferentes métricas que se han usado para calcularlo.
 
