@@ -22,31 +22,30 @@ Dándole al enlace nos lleva a la página: [https://www.fortra.com/security/advi
 </div>
 
 ## Información sobre Vulnerabilidades
-Allí vemos una descripción de los problemas y cómo, son varias las vulnerabilidades detectadas:
 
-Además el desarrollador, nos informa de los productos y versiones afectadas y desde dónde nos podemos descargar los parches de seguridad o software con las vulneravilidades ya corregidas.
+Además el desarrollador, nos informa de las versiones afectadas y que podemos hacer manualmente para arreglar la vulnerabilidad sin necesidad de actualizar.
 
-![](images/Screenshot_20250217_182724.png)
+<div align="center">
+  <img src="3.png" width="500">
+</div>
 
-Vamos a proceder con el trazado de la primera vulnerabilidad presente, en nuestro caso, la __CVE-2023-29073__.
+<div align="center">
+  <img src="2.png" width="500">
+</div>
 
 Para ver información sobre dicha vulnerabilidad podemos acudir al menos a dos fuentes:
 
-- [La sección de CVE que mantiene cve.org.](https://cve.org)
+- [La sección de CVE que mantiene cve.org.](https://www.cve.org/CVERecord?id=CVE-2024-0204)
 
-- [La base de datos de vulnerabilidades de la NIST: NVD.](https://nvd.nist.gov/vuln/detail/CVE-2023-29073)
+- [La base de datos de vulnerabilidades de la NIST: NVD.](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1)
 
 ## Información sobre el riesgo o criticidad de una vulnerabilidad
 
-Desde la [entrada correspondiente a la vulnerabilidad en la NVD](https://nvd.nist.gov/vuln/detail/CVE-2023-29073), lo primero que nos encontramos, es la información de la criticidad que la vulnerabilidad presenta, así como el vector asociado a dicho nivel en la CVSS. En este caso vemos que tiene una valoración de 9.8, y está marcada como __crítica__.
+Desde la [entrada correspondiente a la vulnerabilidad en la NVD](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1), lo primero que nos encontramos, es la información de la criticidad que la vulnerabilidad presenta, así como el vector asociado a dicho nivel en la CVSS. En este caso vemos que tiene una valoración de 9.8, y está marcada como __crítica__.
  
 <div align="center">
   <img src="4.png" width="500">
 </div>
-
-Si ponemos el cursor sobre el Vector nos aparecerán los valores correspondientes a las diferentes métricas que se han usado para calcularlo.
-
-![](images/Screenshot_20250217_184917.png)
 
 Donde podemos ver que ese 9.8 de criticidad está compuesto por un valor de 3.9 de __las métricas de explotabilidad__:
 - El vector de ataque se produce desde la red. 
@@ -64,13 +63,15 @@ Por otra parte las __métricas de impacto__ suman 5.9 puntos:
 
 Otra información importante a obtener son las debilidades que son explotadas. Podemos obtener también esta información tanto en la información de la NVD como en la de CVE.ORG.
 
-![](images/cwe.png)
+<div align="center">
+  <img src="5.png" width="500">
+</div>
 
-En esta ocasión podemos ver como son dos las debilidades explotadas por esta vulnerabilidad: CWE-787 y CWE-122. Vamos a ver información sobre ellas.
+En esta ocasión podemos ver como es una debilidad explotada por esta vulnerabilidad: CWE-425. Vamos a ver información sobre ella.
 
-- CWE-787
+- CWE-425
 
-> [Podemos ver información de esta debilidad en la página de cwe.mitre.org](https://cwe.mitre.org/data/definitions/787.html)
+> [Podemos ver información de esta debilidad en la página de cwe.mitre.org](https://www.cve.org/CVERecord?id=CVE-2024-0204)
 >
 > Dentro de la información mostrada en dicha página, podemos tener diferentes vistas, tal y como podemos ver en la imagen siguiente. Si le damos a __Complete__ tendremos toda la información visible.
 >
